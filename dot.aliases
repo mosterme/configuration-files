@@ -1,3 +1,8 @@
+# Windows aliases for basic tools.
+alias 7z='/c/Program\ Files/7-Zip/7z.exe'
+alias np='/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe'
+
+# Some convenience bash aliases.
 alias ..='cd ..'
 alias ...='cd ../..'
 alias cd..='cd ..'
