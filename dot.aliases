@@ -3,7 +3,7 @@ alias 7z='/c/Program\ Files/7-Zip/7z.exe'
 alias np='/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe'
 
 # Linux aliases for basic tools.
-alias saxon='java -jar /home/pi/proj/saxonhe10-8j/saxon-he-10.8.jar'
+alias saxon='java -jar /home/pi/proj/saxon/saxon-he-10.8.jar'
 
 # Some convenience bash aliases.
 alias ..='cd ..'
