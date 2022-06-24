@@ -3,12 +3,12 @@ alias 7z='/c/Program\ Files/7-Zip/7z.exe'
 alias np='/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe'
 
 # Linux aliases for basic tools.
-alias saxon='java -jar /home/pi/proj/saxon/saxon-he-10.8.jar'
+alias saxon='java -jar /usr/share/java/Saxon-HE.jar'
 
-# Some convenience bash aliases.
+# More convenience bash aliases.
+# Check .bashrc for grep and ll.
 alias ..='cd ..'
 alias ...='cd ../..'
 alias cd..='cd ..'
 alias md='mkdir -p'
 alias rd='rmdir'
-alias ll='ls -l'
