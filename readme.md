@@ -1,6 +1,6 @@
 # configuration-files
 
-aliases, configurations, dotfiles, scripts, etc.
+aliases, configurations, dotfiles, scripts and more.
 
 ## dot.aliases
 ```sh
@@ -21,7 +21,7 @@ alias rd='rmdir'
 ```
 
 ## dot.gitconfig
-```gitconfig
+```sh
 [alias]
 	co = checkout
 	ll = log --oneline -n 20
@@ -101,7 +101,7 @@ export PROMPT_COMMAND=color_my_prompt
 
 echo "# configuration-files"
 echo
-echo "aliases, configurations, dotfiles, scripts, etc."
+echo "aliases, configurations, dotfiles, scripts and more."
 echo
 
 for file in dot.* *.sh
@@ -137,3 +137,4 @@ k='\033[0m'
 echo $c$d$k - $y$v$k - $m$h$k
 echo
 ```
+

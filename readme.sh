@@ -2,7 +2,7 @@
 
 echo "# configuration-files"
 echo
-echo "aliases, configurations, dotfiles, scripts, etc."
+echo "aliases, configurations, dotfiles, scripts and more."
 echo
 
 for file in dot.* *.sh
