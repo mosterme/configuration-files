@@ -1,5 +1,6 @@
 [alias]
 	co = checkout
+	ll = log --oneline -n 20
 	move = mv
 
 [user]
