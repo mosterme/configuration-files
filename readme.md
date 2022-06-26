@@ -59,18 +59,17 @@ fi
 
 # store colors
 RED="\[\033[31m\]"
-BLUE="\[\033[0m\]\[\033[34m\]"
-LIGHTBLUE="\[\033[01;34m\]"
+BLUE="\[\033[34m\]"
 CYAN="\[\033[36m\]"
+LIGHTBLUE="\[\033[01;34m\]"
+LIGHTGREEN="\[\033[01;32m\]"
 BLACK='\[\033[0m\]'
-GREEN="\[\033[01;32m\]"
-ORANGE='\[\033[33m\]'
 VIOLET='\[\033[01;35m\]'
 YELLOW="\[\033[01;33m\]"
 MAGENTA="\[\033[35m\]"
 
 function color_my_prompt {
-  local __user_and_host="$GREEN\u@\h"
+  local __user_and_host="$LIGHTGREEN\u@\h"
   local __cur_location="$LIGHTBLUE\w"
   local __git_branch_color="$CYAN"
   local __prompt_tail="$VIOLET$"
@@ -85,7 +84,7 @@ function color_my_prompt {
   elif [[ "${__git_branch}" =~ "%" ]]; then   # if there are only untracked files
       __git_branch_color="$MAGENTA"
   elif [[ "${__git_branch}" =~ "+" ]]; then   # if there are staged files
-      __git_branch_color="$BLUE"
+      __git_branch_color="$BLACK$BLUE"
   fi
 
   # Build the PS1 (Prompt String)
