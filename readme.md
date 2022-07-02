@@ -23,9 +23,15 @@ alias rd='rmdir'
 ## dot.gitconfig
 ```sh
 [alias]
-	co = checkout
 	ll = log --oneline -n 20
+	co = checkout
 	move = mv
+
+[fetch]
+    prune = true
+
+[status]
+    short = true
 
 [user]
 	email = mosterme@users.noreply.github.com
