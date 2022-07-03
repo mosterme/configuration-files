@@ -23,9 +23,9 @@ alias rd='rmdir'
 ## dot.gitconfig
 ```sh
 [alias]
-	ll = log --oneline -n 20
-	co = checkout
-	move = mv
+    ll = log --oneline -n 20
+    co = checkout
+    move = mv
 
 [fetch]
     prune = true
@@ -34,8 +34,8 @@ alias rd='rmdir'
     short = true
 
 [user]
-	email = mosterme@users.noreply.github.com
-	name = Michael Ostermeier
+    email = mosterme@users.noreply.github.com
+    name = Michael Ostermeier
 ```
 
 ## git-prompt-campbell.sh
