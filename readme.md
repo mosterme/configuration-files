@@ -185,10 +185,10 @@ do
 done
 ```
 
-## sys-update.sh
+## update-debian-system.sh
 ```sh
 #!/bin/sh
-sudo apt update && sudo apt full-upgrade && sudo apt clean
+sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt clean
 ```
 
 ## welcome.sh
