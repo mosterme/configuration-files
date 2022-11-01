@@ -7,6 +7,7 @@ aliases, configurations, dotfiles, scripts and more.
 # Windows aliases for basic tools.
 alias 7z='/c/Program\ Files/7-Zip/7z.exe'
 alias np='/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe'
+alias saxon='java -jar /c/Program\ Files/Saxonica/SaxonHE11-4J/saxon-he-11.4.jar'
 
 # Linux aliases for basic tools.
 alias saxon='java -jar /usr/share/java/Saxon-HE.jar'
@@ -29,6 +30,9 @@ alias rd='rmdir'
 
 [fetch]
     prune = true
+
+[push]
+	autoSetupRemote = true
 
 [status]
     short = true
