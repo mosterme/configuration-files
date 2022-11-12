@@ -33,7 +33,7 @@ alias rd='rmdir'
 
 [push]
 	autoSetupRemote = true
-	push.default = current
+	default = current
 
 [status]
     short = true
