@@ -43,6 +43,25 @@ alias rd='rmdir'
     name = Michael Ostermeier
 ```
 
+## 10-pretty-uname.sh
+```sh
+#!/bin/sh
+# uname -snrvm
+
+# see http://0pointer.de/blog/projects/os-release and https://www.freedesktop.org/software/systemd/man/os-release.html
+test -e /etc/os-release && os_release='/etc/os-release' || os_release='/usr/lib/os-release'
+. "${os_release}"
+
+PRETTY_COLOR='\033[0;32m'
+HOST_NAME=$(hostname)
+HOST_COLOR='\033[1;33m'
+KERNEL_NAME=$(uname -srm)
+KERNEL_COLOR='\033[1;31m'
+k='\033[0m'
+
+echo $PRETTY_COLOR$PRETTY_NAME$k - $HOST_COLOR$HOST_NAME$k - $KERNEL_COLOR$KERNEL_NAME$k
+```
+
 ## git-prompt-campbell.sh
 ```sh
 # https://digitalfortress.tech/tutorial/setting-up-git-prompt-step-by-step/
@@ -194,21 +213,5 @@ done
 ```sh
 #!/bin/sh
 sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt clean
-```
-
-## welcome.sh
-```sh
-#!/bin/sh
-d=$(cat /etc/issue.net)
-v=$(uname -srm)
-h=$(hostname)
-
-c='\033[0;32m'
-y='\033[1;33m'
-m='\033[1;31m'
-k='\033[0m'
-
-echo $c$d$k - $y$v$k - $m$h$k
-echo
 ```
 
