@@ -17,6 +17,7 @@ cpu=$(cut -c 1,2 /sys/class/thermal/thermal_zone0/temp)
 gpu=$(/opt/vc/bin/vcgencmd measure_temp | cut -c 7,6)
 t="CPU ${cpu}° C	GPU ${gpu}° C"
 
+BL='\033[1;34m'
 BG='\033[1;31m'
 BR='\033[0;33m'
 CY='\033[1;36m'
@@ -33,9 +34,9 @@ $BR  | .$BR--------------$BR. |  $NG $PRETTY_NAME - $k
 $BR  | |$CY--.__.--.__.--$BR| |  $RS
 $BR  | |$PU--.__.--.__.--$BR| |  $NR hostname........: $BG$h
 $BR  | |$CY--.__.--.__.--$BR| |  $NR addresses.......: $CY$a$NR and $PU$p
-$BR  | |$PU--.__.--.__.--$BR| |  $NR disk............: $d
-$BR  | |$CY--.__.--.__.--$BR| |  $NR memory..........: $m
+$BR  | |$PU--.__.--.__.--$BR| |  $NR disk............: $BL$d
+$BR  | |$CY--.__.--.__.--$BR| |  $NR memory..........: $BL$m
 $BR  | '$BR--------------$BR' |  $NR temperature ....: $YE$t
-$BR  |  $DG##    ()    ##$BR  |  $NR uptime..........: $u
+$BR  |  $DG##    ()    ##$BR  |  $NR uptime..........: $PU$u
 $BR  '==$BR==============$BR=='  $RS
 "
