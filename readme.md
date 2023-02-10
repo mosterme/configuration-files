@@ -32,8 +32,8 @@ alias rd='rmdir'
     prune = true
 
 [push]
-	autoSetupRemote = true
-	default = current
+    autoSetupRemote = true
+    default = current
 
 [status]
     short = true
