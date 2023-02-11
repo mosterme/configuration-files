@@ -56,4 +56,4 @@ function color_my_prompt {
 }
 
 # configure PROMPT_COMMAND which is executed each time before PS1
-export PROMPT_COMMAND=color_my_prompt
+export PROMPT_COMMAND="history -a; color_my_prompt"
