@@ -24,9 +24,10 @@ alias rd='rmdir'
 ## dot.gitconfig
 ```sh
 [alias]
-    ll = log --oneline -n 20
     co = checkout
     move = mv
+    logs = log --format='%C(auto)%h%d %s %C(green)(%cr) %C(cyan)[%an]%C(reset)' -n 20
+
 
 [fetch]
     prune = true
@@ -34,9 +35,6 @@ alias rd='rmdir'
 [push]
     autoSetupRemote = true
     default = current
-
-[status]
-    short = true
 
 [user]
     email = mosterme@users.noreply.github.com
