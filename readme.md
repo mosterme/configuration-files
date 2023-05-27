@@ -26,8 +26,12 @@ alias rd='rmdir'
 [alias]
     co = checkout
     move = mv
-    logs = log --format='%C(auto)%h%d %s %C(green)(%cr) %C(cyan)[%an]%C(reset)' -n 20
 
+    lo = log --oneline -n 20
+
+    branches = branch --format='%(HEAD) %(if)%(HEAD)%(then)%(color:green)%(else)%(color:yellow)%(end)%(refname:short)%(color:reset) %(contents:subject) %(color:green)(%(committerdate:relative)) %(color:cyan)[%(authorname)]%(color:reset)'
+    logs = log --format='%C(auto)%h%d %s %C(green)(%cr) %C(cyan)[%an]%C(reset)' -n 20
+    tags="for-each-ref --sort=taggerdate --format='%(color:yellow)%(refname:short)%(color:reset) %(subject) %(color:green)(%(taggerdate:human)) %(color:cyan)[%(taggername)]%(color:reset)' refs/tags"
 
 [fetch]
     prune = true
