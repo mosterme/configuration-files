@@ -5,7 +5,7 @@ echo
 echo "aliases, configurations, dotfiles, scripts and more."
 echo
 
-for file in dot.* *.sh
+for file in *[^.md]
 do
   if [ ! -d "$file" ]; then
       echo "## $file"

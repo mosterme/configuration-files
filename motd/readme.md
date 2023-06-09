@@ -5,6 +5,9 @@ Scripts to generate a dynamic "message of the day" for the Raspberry Pi.
 
 ![dynamic motd](motd.png)
 
+## 10-pretty-uname
+Replacement for `/etc/update-motd.d/10-uname` with more colors and pretty name for the distribution.
+
 ## Install
 
 ```
