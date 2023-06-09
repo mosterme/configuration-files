@@ -1,0 +1,7 @@
+#!/bin/bash
+# greatly improved alternative to git shortlog --no-merges -n -s
+# inspired by the answers to https://stackoverflow.com/q/1265040
+git log --no-merges --numstat --pretty=format:%aN "$@" | \
+awk '/./ && !author { author = $0; commits[author] += 1; next } author { inserts[author] += $1; deletes[author] += $2; files[author] += 1; } /^$/ { author = ""; next }
+END { for (a in commits) { printf "\033[0;34m%-24s\t\033[0;33m %6d ↑↑ \033[0;32m %8d ++ \033[0;31m %8d -- \033[0m %5d 🗋🗋\n", a, commits[a], inserts[a], deletes[a], files[a] } }' | \
+sort -t '	' -k2r
