@@ -4,7 +4,7 @@
     branches = branch --format='%(HEAD) %(if)%(HEAD)%(then)%(color:brightyellow)%(else)%(color:yellow)%(end)%(refname:short)%(color:reset) %(contents:subject) %(color:green)(%(committerdate:relative)) %(color:blue)[%(authorname)]%(color:reset)'
     logs = log --format='%C(auto)%h%d %s %C(green)(%cr) %C(blue)[%aN]%C(reset)' -n 20
     tags = tag --format='%(color:yellow)%(refname:short)%(color:reset) %(subject) %(color:green)(%(taggerdate:human)) %(color:blue)[%(taggername)]%(color:reset)'
-    configure = config --global -e
+    configure = config --edit --global
 
 [core]
     sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
