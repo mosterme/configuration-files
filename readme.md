@@ -36,7 +36,7 @@ PROMPT_COMMAND='history -a'
 [alias]
     co = checkout
     move = mv
-    branches = branch --format='%(HEAD) %(if)%(HEAD)%(then)%(color:brightyellow)%(else)%(color:yellow)%(end)%(refname:short)%(color:reset) %(contents:subject) %(color:green)(%(committerdate:relative)) %(color:blue)[%(authorname)]%(color:reset)'
+    branches = branch --format='%(HEAD) %(if)%(HEAD)%(then)%(color:brightyellow)%(else)%(if)%(worktreepath)%(then)%(color:cyan)%(else)%(if)%(upstream)%(then)%(color:yellow)%(else)%(color:red)%(end)%(end)%(end)%(if)%(symref)%(then)%(color:bold)%(refname:strip=2) -> %(symref:short)%(else)%(refname:short)%(end)%(color:reset) %(contents:subject) %(color:green)(%(committerdate:relative)) %(color:blue)[%(authorname)]%(color:reset)'
     logs = log --format='%C(auto)%h%d %s %C(green)(%cr) %C(blue)[%aN]%C(reset)' -n 20
     tags = tag --format='%(color:yellow)%(refname:short)%(color:reset) %(subject) %(color:green)(%(taggerdate:human)) %(color:blue)[%(taggername)]%(color:reset)'
     configure = config --edit --global
@@ -52,6 +52,6 @@ PROMPT_COMMAND='history -a'
     default = current
 
 [user]
-    email = firstname.lastname@email.address
-    name = Firstname Lastname
+    email = mosterme@users.noreply.github.com
+    name = Michael Ostermeier
 ```
