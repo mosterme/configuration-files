@@ -17,5 +17,5 @@
     default = current
 
 [user]
-    email = firstname.lastname@email.address
-    name = Firstname Lastname
+    email = mosterme@users.noreply.github.com
+    name = Michael Ostermeier
