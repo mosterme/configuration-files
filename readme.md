@@ -2,6 +2,9 @@
 
 aliases, configurations, dotfiles, scripts and more.
 
+* [What do you use to manage your dotfiles?](https://news.ycombinator.com/item?id=11070797)
+* [How to store dotfiles in a bare git repository.](https://www.atlassian.com/git/tutorials/dotfiles)
+
 ## .aliases
 ```sh
 # Windows aliases for basic tools.
