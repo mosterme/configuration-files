@@ -4,6 +4,7 @@ if [[ "$OSTYPE" =~ "msys" ]]; then
 # Windows aliases for basic tools.
 alias 7z='/c/Program\ Files/7-Zip/7z.exe'
 alias np='/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe'
+alias vlc='/c/Program\ Files/VideoLAN/VLC/vlc.exe'
 alias saxon='java -jar /c/Program\ Files/Saxonica/SaxonHE11-4J/saxon-he-11.4.jar'
 alias batik='java -jar /c/Program\ Files/Apache/batik-1.16/batik-rasterizer-1.16.jar'
 elif [[ "$OSTYPE" =~ "linux" ]]; then
