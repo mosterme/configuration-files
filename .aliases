@@ -13,6 +13,8 @@ elif [[ "$OSTYPE" =~ "linux" ]]; then
 alias saxon='java -jar /usr/share/java/Saxon-HE.jar'
 fi
 
+alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
+
 # Some convenience bash aliases.
 alias ..='cd ..'
 alias ...='cd ../..'
