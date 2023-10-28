@@ -43,4 +43,4 @@ PS1="$PS1"'\n'                 # new line
 PS1="$PS1"'\[\033[0;35m\]'     # change to magenta
 PS1="$PS1"'\$ '                # prompt $ or # (root)
 PS1="$PS1"'\[\033[0m\]'        # reset color
-MSYS2_PS1="$PS1"               # for detection by MSYS2 SDK's bash.basrc
+MSYS2_PS1="$PS1"               # for MSYS2 SDK's bash.basrc
