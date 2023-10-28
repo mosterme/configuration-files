@@ -14,6 +14,7 @@ if [[ "$OSTYPE" =~ "msys" ]]; then
 # Windows aliases for basic tools.
 alias 7z='/c/Program\ Files/7-Zip/7z.exe'
 alias np='/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe'
+alias vlc='/c/Program\ Files/VideoLAN/VLC/vlc.exe'
 alias saxon='java -jar /c/Program\ Files/Saxonica/SaxonHE11-4J/saxon-he-11.4.jar'
 alias batik='java -jar /c/Program\ Files/Apache/batik-1.16/batik-rasterizer-1.16.jar'
 elif [[ "$OSTYPE" =~ "linux" ]]; then
@@ -49,9 +50,6 @@ PROMPT_COMMAND='history -a'
     logs = log --format='%C(auto)%h%d %s %C(green)(%cr) %C(blue)[%aN]%C(reset)' -n 20
     tags = tag --format='%(color:yellow)%(refname:short)%(color:reset) %(subject) %(color:green)(%(taggerdate:human)) %(color:blue)[%(taggername)]%(color:reset)'
     configure = config --edit --global
-
-[core]
-    sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
 
 [fetch]
     prune = true
