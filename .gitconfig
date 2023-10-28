@@ -6,9 +6,6 @@
     tags = tag --format='%(color:yellow)%(refname:short)%(color:reset) %(subject) %(color:green)(%(taggerdate:human)) %(color:blue)[%(taggername)]%(color:reset)'
     configure = config --edit --global
 
-[core]
-    sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
-
 [fetch]
     prune = true
 
