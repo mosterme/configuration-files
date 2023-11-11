@@ -1,0 +1,2 @@
+#!/bin/sh
+curl -s https://www.serienjunkies.de/docs/serienkalender-aktuell.html | grep -Po '<div class="fett big"\K.*?\)|pad10 fett bigbig rot2"> \K.*?202\d' | tr ">" " " | pr -3t -W 120
