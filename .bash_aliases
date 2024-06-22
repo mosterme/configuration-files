@@ -1,16 +1,15 @@
 # How to detect the OS from a Bash script? - see https://stackoverflow.com/q/394230
-if [[ "$OSTYPE" =~ "msys" ]]; then
 
 # Windows aliases for basic tools.
-alias 7z='/c/Program\ Files/7-Zip/7z.exe'
-alias vlc='/c/Program\ Files/VideoLAN/VLC/vlc.exe'
-alias fop='/c/Program\ Files/Apache/fop-2.9/fop/fop.bat'
-alias saxon='java -jar /c/Program\ Files/Saxonica/SaxonHE11-4J/saxon-he-11.4.jar'
-alias batik='java -jar /c/Program\ Files/Apache/batik-1.16/batik-rasterizer-1.16.jar'
-elif [[ "$OSTYPE" =~ "linux" ]]; then
-
+if [[ "$OSTYPE" =~ "msys" ]]; then
+    alias 7z='/c/Program\ Files/7-Zip/7z.exe'
+    alias vlc='/c/Program\ Files/VideoLAN/VLC/vlc.exe'
+    alias fop='/c/Program\ Files/Apache/fop-2.9/fop/fop.bat'
+    alias saxon='java -jar /c/Program\ Files/Saxonica/SaxonHE11-4J/saxon-he-11.4.jar'
+    alias batik='java -jar /c/Program\ Files/Apache/batik-1.16/batik-rasterizer-1.16.jar'
 # Linux aliases for basic tools.
-alias saxon='java -jar /usr/share/java/Saxon-HE.jar'
+elif [[ "$OSTYPE" =~ "linux" ]]; then
+    alias saxon='java -jar /usr/share/java/Saxon-HE.jar'
 fi
 
 alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
