@@ -5,6 +5,7 @@ if [[ "$OSTYPE" =~ "msys" ]]; then
     alias 7z='/c/Program\ Files/7-Zip/7z.exe'
     alias vlc='/c/Program\ Files/VideoLAN/VLC/vlc.exe'
     alias fop='/c/Program\ Files/Apache/fop-2.9/fop/fop.bat'
+    alias yed='java -jar /c/Program\ Files/yworks/yed-3.24/yed.jar'
     alias saxon='java -jar /c/Program\ Files/Saxonica/SaxonHE12-5J/saxon-he-12.5.jar'
     alias batik='java -jar /c/Program\ Files/Apache/batik-1.16/batik-rasterizer-1.16.jar'
 # Linux aliases for basic tools.
