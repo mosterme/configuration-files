@@ -11,6 +11,8 @@ if [[ "$OSTYPE" =~ "msys" ]]; then
 # Linux aliases for basic tools.
 elif [[ "$OSTYPE" =~ "linux" ]]; then
     alias saxon='java -jar /usr/share/java/Saxon-HE.jar'
+    alias batik='java -jar /usr/share/java/batik-1.18/batik-rasterizer-1.18.jar'
+    alias squiggle='java -jar /usr/share/java/batik-1.18/batik-squiggle-1.18.jar'
 fi
 
 alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
@@ -32,3 +34,4 @@ alias egrep='egrep --color=auto'
 
 # https://stackoverflow.com/q/10488498
 PROMPT_COMMAND='history -a'
+
