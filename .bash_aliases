@@ -10,6 +10,7 @@ if [[ "$OSTYPE" =~ "msys" ]]; then
     alias batik='java -jar /c/Program\ Files/Apache/batik-1.16/batik-rasterizer-1.16.jar'
 # Linux aliases for basic tools.
 elif [[ "$OSTYPE" =~ "linux" ]]; then
+    alias open='xdg-open'
     alias yed='java -jar /opt/yworks/yed-3.24/yed.jar'
     alias saxon='java -jar /usr/share/java/Saxon-HE.jar'
     alias batik='java -jar /usr/share/java/batik-1.18/batik-rasterizer-1.18.jar'
