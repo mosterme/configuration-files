@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# @reboot         root      /path/to/colorful-issue > /etc/issue.d/10-openSUSE.conf
+
+if [[ -e /etc/os-release ]]; then . /etc/os-release; else . /usr/lib/os-release; fi
+
+CLEAR='\033[2J\033[H'
+DEFLT='\033[0;36m'
+GREET='Welcome to '
+RESET='\033[0m'
+
+if [[ $VERSION ]]; then VERSN=$VERSION; else VERSN=$VERSION_ID; fi
+if [[ $ANSI_COLOR ]]; then COLOR='\033['$ANSI_COLOR'm'; else COLOR=$DEFLT; fi
+
+echo -en "$CLEAR$GREET$COLOR$NAME$RESET $VERSN"
+echo " - \s \r \m (\l)"
+echo
