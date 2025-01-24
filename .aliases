@@ -33,7 +33,3 @@ alias ll='ls -l'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
-
-# https://stackoverflow.com/q/10488498
-PROMPT_COMMAND='history -a'
-
