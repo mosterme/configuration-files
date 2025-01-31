@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# perform a distribution upgrade
+sudo zypper dist-upgrade
+
+# remove un-needed dependencies
+# currently looking into this ...
+
+# clean the local caches
+sudo zypper clean
