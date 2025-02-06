@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# /etc/crontab
+#
+# @reboot         root      /path/to/sddm-spotlight
+
+# /usr/share/sddm/themes/breeze/theme.conf.user
+#
+# [General]
+# background=spotlight.jpg
+# type=image
+
+DIR=/usr/share/wallpapers/Spotlight
+DST=/usr/share/sddm/themes/breeze/spotlight.jpg
+SRC=$(find $DIR -name *.jpg | shuf -n 1)
+
+echo -n $(basename $0) \ && cp -v "$SRC" "$DST"
