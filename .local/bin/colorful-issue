@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# /etc/crontab
+#
 # @reboot         root      /path/to/colorful-issue > /etc/issue.d/10-openSUSE.conf
 
 if [[ -e /etc/os-release ]]; then . /etc/os-release; else . /usr/lib/os-release; fi
