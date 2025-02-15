@@ -20,6 +20,9 @@ fi
 
 alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
 
+alias cw="date +'calendar week %V'"
+alias kw="date +'Kalenderwoche %V'"
+
 # Some convenience bash aliases.
 alias ..='cd ..'
 alias ...='cd ../..'
