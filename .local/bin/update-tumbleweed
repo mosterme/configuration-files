@@ -1,10 +1,8 @@
 #!/bin/sh
 
-# perform a distribution upgrade
-sudo zypper dist-upgrade
+BLU='\033[1;34m'
+RST='\033[0m'
 
-# remove un-needed dependencies
-# currently looking into this ...
+echo -e "${BLU}1) do a distribution upgrade.${RST}" && sudo zypper dist-upgrade --no-recommends --remove-orphaned
 
-# clean the local caches
-sudo zypper clean
+echo -e "${BLU}2) clean the local caches.${RST}" && sudo zypper clean
