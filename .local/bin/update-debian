@@ -1,2 +1,10 @@
 #!/bin/sh
-sudo apt update && sudo apt full-upgrade && sudo apt autoremove && sudo apt clean
+
+BLU='\033[1;34m'
+RST='\033[0m'
+
+echo "${BLU}1) update package information${RST}" && sudo apt update &&
+echo "${BLU}2) upgrade installed software${RST}" && sudo apt full-upgrade &&
+echo "${BLU}3) autoremove old dependencies${RST}" && sudo apt autoremove &&
+echo "${BLU}4) clean apt caches and files${RST}" && sudo apt clean &&
+echo "done"
