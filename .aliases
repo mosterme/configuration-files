@@ -3,6 +3,7 @@
 # Windows aliases for basic tools.
 if [[ "$OSTYPE" =~ "msys" ]]; then
     alias 7z='/c/Program\ Files/7-Zip/7z.exe'
+    alias open='explorer.exe'
     alias vlc='/c/Program\ Files/VideoLAN/VLC/vlc.exe'
     alias fop='/c/Program\ Files/Apache/fop-2.9/fop/fop.bat'
     alias yed='java -jar /c/Program\ Files/yworks/yed-3.24/yed.jar'
