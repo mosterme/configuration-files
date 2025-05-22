@@ -4,5 +4,4 @@ BLU='\033[1;34m'
 RST='\033[0m'
 
 echo -e "${BLU}1) do a distribution upgrade.${RST}" && sudo zypper dist-upgrade --no-recommends --remove-orphaned
-
-echo -e "${BLU}2) clean the local caches.${RST}" && sudo zypper clean
+echo -e "${BLU}2) do clean the local caches.${RST}" && sudo zypper clean
