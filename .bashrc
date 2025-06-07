@@ -1,5 +1,5 @@
-# make sure my .aliases and git-prompt.sh are loaded.
-if [ -s ~/.aliases ]; then . ~/.aliases ; fi
+# make sure .bash_aliases and config/git/prompt are loaded.
+if [ -s ~/.bash_aliases ]; then . ~/.bash_aliases ; fi
 if [ -s ~/.config/git/prompt ]; then . ~/.config/git/prompt ; fi
 
 # https://github.com/b3nj5m1n/xdg-ninja
