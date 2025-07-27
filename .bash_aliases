@@ -15,8 +15,8 @@ elif [[ "$OSTYPE" =~ "linux" ]]; then
     alias open='xdg-open'
     alias yed='java -jar /opt/yworks/yed-3.24/yed.jar'
     alias saxon='java -jar /usr/share/java/Saxon-HE.jar'
-    alias batik='java -jar /usr/share/java/batik-1.18/batik-rasterizer-1.18.jar'
-    alias squiggle='java -jar /usr/share/java/batik-1.18/batik-squiggle-1.18.jar'
+    alias batik='java -jar /usr/share/java/batik-1.19/batik-rasterizer-1.19.jar'
+    alias squiggle='java -jar /usr/share/java/batik-1.19/batik-squiggle-1.19.jar'
 fi
 
 alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"
