@@ -18,7 +18,7 @@ echo "
 
 " > ${patch}
 
-patch -Nr - ${boot}  < ${patch}
-patch -Nr - ${share} < ${patch}
+sudo patch -Nr - ${boot}  < ${patch}
+sudo patch -Nr - ${share} < ${patch}
 
 rm ${patch}
