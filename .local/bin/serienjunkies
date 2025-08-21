@@ -1,4 +1,6 @@
 #!/bin/sh
 URL=https://www.serienjunkies.de/docs/serienkalender-aktuell.html
-curl -s $URL | grep -Po '<div class="fett big"\K.*?\)|pad10 fett bigbig rot2"> \K.*?202\d' | tr ">" " " | column
+curl -s $URL |
+grep -Po '(?<=<div class="sjf-show-calendar-date"> ).+?(?= </div>)|<div class="sjf-show-calendar-title"> <a href=[^>]+>\K.+?(?= </a>)' |
+grep -Ez '[DFMS][aceghimnorstw]{5,10}, [123]?[0-9]. [ADFJMNOS][aäbegiklmnoprstuvz]{2,8} 202[0-9]' --color=always | column
 echo ; echo $URL
