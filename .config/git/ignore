@@ -1,0 +1,9 @@
+# global git ignores
+
+.cache
+.classpath
+.directory
+.idea
+.project
+.settings
+.vscode
