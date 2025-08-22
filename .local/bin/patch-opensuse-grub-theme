@@ -1,0 +1,24 @@
+#!/bin/sh
+
+boot=/boot/grub2/themes/openSUSE/theme.txt 
+share=/usr/share/grub2/themes/openSUSE/theme.txt 
+patch=temporary-opensuse-grub-theme.patch
+
+echo "
+@@ -17,8 +17,8 @@
+ }
+ 
+ + boot_menu {
+-  left = 10%
+-  width = 80%
++  left = 15%
++  width = 70%
+   top = 33%
+   height = 34%
+
+" > ${patch}
+
+sudo patch -Nr - ${boot}  < ${patch}
+sudo patch -Nr - ${share} < ${patch}
+
+rm ${patch}
