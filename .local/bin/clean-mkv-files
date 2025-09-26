@@ -1,0 +1,12 @@
+#!/bin/bash
+
+PIN='\033[1;35m'
+RST='\033[0m'
+
+for f in *.mkv; do
+    echo -e ${PIN}${f%.mkv}${RST}
+    subtitles=$(mkvinfo --ui-language en_US "$f" | grep subtitles | wc -l)
+    if (( subtitles > 0 )) then mkvmerge -o "o-$f" --no-subtitles "$f" && mv "o-$f" "$f" ; fi
+    # mkvmerge -o "o-$f" --subtitle-tracks eng "$f" && mv "o-$f" "$f"
+    mkvpropedit "$f" --tags all: -d date -d segment-uid --edit track:v1 --delete name --edit track:a1 --delete name --edit info --set "title=${f%.mkv}"
+done
