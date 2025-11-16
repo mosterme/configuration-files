@@ -8,3 +8,6 @@
 .project
 .settings
 .vscode
+
+[Bb]uild
+[Tt]arget
