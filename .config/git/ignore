@@ -1,5 +1,8 @@
 # global git ignores
 
+.config/git/gitlab
+.config/git/stavro
+
 .cache
 .classpath
 .coverage
