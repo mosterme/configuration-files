@@ -89,12 +89,12 @@ Color=169,177,214
 Color=169,177,214
 
 [General]
-Anchor=0.5,0.5
+Anchor=1,1
 Blur=true
 ColorRandomization=false
 Description=Tokyo Night
-FillStyle=Tile
+FillStyle=NoScaling
 Opacity=0.75
-Wallpaper=
+Wallpaper=/home/michael/.local/share/images/plumber.png
 WallpaperFlipType=NoFlip
 WallpaperOpacity=1

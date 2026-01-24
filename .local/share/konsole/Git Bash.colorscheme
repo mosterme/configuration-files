@@ -95,6 +95,6 @@ ColorRandomization=false
 Description=Git Bash
 FillStyle=NoScaling
 Opacity=0.7
-Wallpaper=/home/michael/Bilder/Terminal/git-bash.png
+Wallpaper=/home/michael/.local/share/images/git.png
 WallpaperFlipType=NoFlip
 WallpaperOpacity=0.7
