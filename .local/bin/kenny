@@ -1,4 +1,0 @@
-#!/bin/perl -pl # This kenny-filter is virus-free as long as you don't copy it
-$p=3-2*/[^\W\dmpf_]/i;s.[a-z]{$p}.vec($f=join('',$p-1?chr(sub{$_[0]*9+$_[1]*3+
-$_[2]}->(map{/p|f/i+/f/i}split//,$&)+97):('m',p,f)[map{((ord$&)%32-1)/$_%3}(9,
-3,1)]),5,1)='`'lt$&;$f.eig;                                # Jan-Pieter Cornet
