@@ -1,6 +1,7 @@
 # global git ignores
 
 .config/git/gitlab
+.config/git/random
 .config/git/stavro
 
 .cache
@@ -15,3 +16,6 @@
 [Bb]uild
 [Tt]arget
 [Hh]icolor
+
+folder.jpg
+folder.png

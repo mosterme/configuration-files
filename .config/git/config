@@ -27,5 +27,8 @@
 [includeIf "hasconfig:remote.*.url:git@gitlab.*:*/**"]
     path = gitlab
 
+[includeIf "hasconfig:remote.*.url:ssh://git@codeberg.*/**"]
+    path = random
+
 [includeIf "hasconfig:remote.*.url:ssh://michael@*:*/**"]
     path = stavro
