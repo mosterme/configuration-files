@@ -6,6 +6,7 @@ CursorShape=2
 
 [General]
 Command=nethack
+LocalTabTitleFormat=Nethack
 Name=Nethack
 Parent=FALLBACK/
 TerminalColumns=130
